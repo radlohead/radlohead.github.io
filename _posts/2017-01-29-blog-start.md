@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 엣지있게 설명한 Ionic 수정증보판 작업을 진행 합니다.
+title: blog 시작
 category: front-end
 tags:
   - ionic
@@ -16,3 +16,4 @@ images:
 
 ## blog 시작    
 
+2017.1.29일 네이버블로그를 버리고 git에서 블로그를 시작
