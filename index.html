@@ -19,9 +19,10 @@ body_class: "home-template user"
           {% endif %}
 
           <div class="meta">
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">            
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
-            </time>
+              <img src="/assets/images/{{ site.logo }}" class="author_img">
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B %-d, %Y" }}</a>
+              </time>
           </div>
 
           <header>
