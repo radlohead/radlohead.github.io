@@ -6,6 +6,14 @@
                 <strong>Feeds</strong>
             </a>
 
+            {% if site.logo %}
+            <a href="{{ site.baseurl }}/about" class="photo circle">
+              <span style="background-image: url('{{ site.baseurl }}/assets/images/{{ site.logo }}');">
+                <img src="{{ site.baseurl }}/assets/images/{{ site.logo }}" alt="{{ site.title }}"/>
+              </span>
+            </a>
+            {% endif %}
+
             <div class="details">
                 <h4><a href="{{ site.url }}/about" class="url n">{{ site.author.name }}</a></h4>
                 <a href="{{ site.baseurl | prepend: site.url }}" class="js-remove-domain-schema">{{ site.url }}{{ site.baseurl }}</a><br>
