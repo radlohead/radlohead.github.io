@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: 네이버블로그에 이어서 드디어 git에도 블로그를 만들었습니다!!
-category: front-end
+category: ionic
 tags:
   - javascript
   - react
