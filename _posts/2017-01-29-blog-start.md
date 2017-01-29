@@ -18,10 +18,10 @@ images:
 
 2017.1.29일 네이버블로그를 버리고 git에서 블로그를 시작
 
-//<pre class="brush: js">
-//function func()
-//  var str = "test";
-//  return str;
-//}
-//console.log(func());
-//</pre>
+<pre class="brush: js">
+function func()
+  var str = "테스트용 코드";
+  return str;
+}
+console.log(func());
+</pre>
