@@ -18,7 +18,7 @@ images:
 
 [엣지있게 설명한 Ionic](http://blog.saltfactory.net/books/ionic-edge/) 책이 출판될 때 Ionic 버전은 [v1.0 RC](http://code.ionicframework.com/#1.0.0-rc.2) 이였습니다. 이후 Ionic은 폭풍같은 성장세와 활발한 커뮤니티를 통해 빠른 버전 업데이트가 진행이 되었고 지금은 [v1.2.4](http://code.ionicframework.com/#1.2.4) 까지 릴리즈 되었습니다. 또한 Ionic은 새로운 표현식을 포함한 Ionic HTML 컴포넌트를 가지고 [v2.0.0](https://github.com/driftyco/ionic/releases/tag/v2.0.0-alpha.53)을 릴리즈할 준비를 하고 있습니다. 이 처럼 Ionic은 현재 가장 활발하고 인기 있는 하이브리드 앱 개발 프레임워크라는 사실을 확인할 수 있습니다. 이에 맞춰 **엣지있게 설명한 Ionic 수정증보판**을 준비하게 되었습니다.
 
-<!--more-->
+1
 
 ## 새롭게 바뀌는 내용
 
