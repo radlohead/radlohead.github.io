@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 엣지있게 설명한 Ionic 수정증보판 작업을 진행 합니다.
-category: ionic
+category: front-end
 tags:
   - ionic
   - cordova
