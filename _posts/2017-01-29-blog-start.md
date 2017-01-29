@@ -3,12 +3,12 @@ layout: post
 title: blog 시작
 category: front-end
 tags:
-  - ionic
-  - cordova
-  - hybrid
-  - hybridapp
-  - phonegap
-  - ios
+  - front-end
+  - javascript
+  - react
+  - webpack
+  - npm
+  - ajax
 comments: true
 images:
   title:
