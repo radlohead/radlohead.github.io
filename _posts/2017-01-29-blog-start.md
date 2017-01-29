@@ -1,19 +1,22 @@
 ﻿---
 layout: post
-title: 네이버블로그에 이어서 드디어 git에도 블로그를 만들었습니다!!
+title: 엣지있게 설명한 Ionic 수정증보판 작업을 진행 합니다.
 category: ionic
 tags:
-  - javascript
-  - react
-  - front-end
+  - ionic
+  - cordova
+  - hybrid
+  - hybridapp
+  - phonegap
+  - ios
 comments: true
 images:
   title: http://asset.blog.hibrainapps.net/saltfactory/images/48133d68-b7e5-4434-b808-a81d59494aef
 ---
 
-## 블로그 시작!!
+## 최신 Ionic 버전을 위한 개정판 준비
 
-[올해 front-end 입성]을 위해 달려보자 
+[엣지있게 설명한 Ionic](http://blog.saltfactory.net/books/ionic-edge/) 책이 출판될 때 Ionic 버전은 [v1.0 RC](http://code.ionicframework.com/#1.0.0-rc.2) 이였습니다. 이후 Ionic은 폭풍같은 성장세와 활발한 커뮤니티를 통해 빠른 버전 업데이트가 진행이 되었고 지금은 [v1.2.4](http://code.ionicframework.com/#1.2.4) 까지 릴리즈 되었습니다. 또한 Ionic은 새로운 표현식을 포함한 Ionic HTML 컴포넌트를 가지고 [v2.0.0](https://github.com/driftyco/ionic/releases/tag/v2.0.0-alpha.53)을 릴리즈할 준비를 하고 있습니다. 이 처럼 Ionic은 현재 가장 활발하고 인기 있는 하이브리드 앱 개발 프레임워크라는 사실을 확인할 수 있습니다. 이에 맞춰 **엣지있게 설명한 Ionic 수정증보판**을 준비하게 되었습니다.
 
 <!--more-->
 
@@ -55,5 +58,3 @@ images:
 > 출판사 요청으로 **엣지있게 설명한 Ionic (2nd) 개정판**에서 => **엣지있게 설명한 수정증보판**으로 표기 변경되었습니다.
 
 이번에 새롭게 인쇄를 준비하는 책은 원서 Ionic Edge 2nd edition을 번역한 것이 아니라(아직 2nd edition이 나오지 않음) 초판의 내용을 수정 추가한 수정증보판입니다.
-
-
