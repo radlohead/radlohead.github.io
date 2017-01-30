@@ -20,11 +20,3 @@ images:
 
 기존 네이버블로그 주소입니다.<br>
 <a href="http://blog.naver.com/radlohead">http://blog.naver.com/radlohead</a>
- 
-<pre class="brush: js">
-function func()
-  var str = "테스트용 코드";
-  return str;
-}
-console.log(func());
-</pre>
