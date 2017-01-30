@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe1ef5bc-94d9-4b6e-904d-015f4c1c3a5b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-01-30-javascript-forEach-map-reduce.md" afterPath="$PROJECT_DIR$/_posts/2017-01-30-javascript-forEach-map-reduce.md" />
     </list>
     <ignored path="radlohead.github.io.iws" />
@@ -40,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-01-30-javascript-forEach-map-reduce.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+              <first_editor relative-caret-position="311">
+                <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -219,12 +218,12 @@
       <option name="presentableId" value="Default" />
       <updated>1485683882485</updated>
       <workItem from="1485747977747" duration="3202000" />
-      <workItem from="1485753735208" duration="3441000" />
+      <workItem from="1485753735208" duration="4167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6643000" />
+    <option name="totallyTimeSpent" value="7369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -474,8 +473,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-01-30-javascript-forEach-map-reduce.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="79" column="21" lean-forward="false" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <first_editor relative-caret-position="311">
+            <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />

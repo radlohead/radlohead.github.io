@@ -79,3 +79,8 @@ console.log(a);  //[2,3,4,5,6]
 
 이런형태로 값을 도출해 내는 걸 알수 있다.
 
+prevValue만 리턴하면 배열의 첫번째 요소 1이 리턴이 된다.<br>
+currentValue는 배열의 마지막 요소 5가 리턴이 된다.
+
+**forEach, map, reduce** 메소드중 reduce가 더 어려운 느낌이 드는 것 같다.
+
