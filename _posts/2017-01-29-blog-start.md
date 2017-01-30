@@ -11,7 +11,7 @@ tags:
   - ajax
 comments: true
 images:
-  title: https://radlohead.github.io/images/git.png
+  title: 
 ---
 
 ## git blog 시작    
