@@ -16,11 +16,11 @@ images:
 
 ## git blog 시작    
 
-<!--more-->
-
 2010년부터 운영해온 네이버 블로그에서 벗어나 2017년에는 뭔가 전환점이 필요해서 
 git블로그로 스터디에서 배운 지식과 혼자서 개발한 경험들을 앞으로 이 블로그에 업로드
 하려고 한다. 
+
+<!--more-->
 
 기존 네이버블로그 주소입니다.<br>
 <a href="http://blog.naver.com/radlohead">http://blog.naver.com/radlohead</a>
