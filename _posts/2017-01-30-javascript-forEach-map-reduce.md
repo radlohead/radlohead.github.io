@@ -11,7 +11,7 @@ tags:
   - ajax
 comments: true
 images:
-  title: https://radlohead.github.io/images/joon-big.jpg
+  title: https://radlohead.github.io/images/es6.jpg
 ---
 
 ## javascript에서 forEach, map, reduce 차이점을 알아보자    
@@ -83,4 +83,4 @@ prevValue만 리턴하면 배열의 첫번째 요소 1이 리턴이 된다.<br>
 currentValue는 배열의 마지막 요소 5가 리턴이 된다.
 
 **forEach, map, reduce** 메소드중 reduce가 더 어려운 느낌이 드는 것 같다.
-<!--![test이미지]({{site.url}}/images/joon-big.jpg)-->
+<!--![test이미지]({{site.url}}/images/es6.jpg)-->
