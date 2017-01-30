@@ -11,7 +11,7 @@ tags:
   - ajax
 comments: true
 images:
-  title: radlohead.github.io/images/joon-big.jpg
+  title: https://radlohead.github.io/images/joon-big.jpg
 ---
 
 ## javascript에서 forEach, map, reduce 차이점을 알아보자    
