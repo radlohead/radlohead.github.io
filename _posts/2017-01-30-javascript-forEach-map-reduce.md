@@ -20,7 +20,7 @@ images:
 
 <!--more-->
 
-[forEach, map, reduce]의 공통점은 배열을 이용한다는 점이다.
+**forEach, map, reduce**의 공통점은 배열을 이용한다는 점이다.
 배열의 값을 조작해서 원하는 결과값을 도출하는데 의미가 있다.
 
 다른점은 forEach는 문밖으로 리턴값을 받지를 못한다. 아래의 코드를 보자
@@ -34,3 +34,38 @@ console.log(a);  //undefined
 </pre>
 
 이 경우 **undefined**가 출력 된다.
+
+하지만 같은 경우라도 map을 이용하면 다르다.
+
+<pre class="brush: js">
+var arr = [1,2,3,4,5];
+var a = arr.map(function(v){
+	return v + 1;
+});
+console.log(a);  //[2,3,4,5,6]
+</pre>
+
+이 경우는 **[2,3,4,5,6]**이 들어있는 배열이 출력된다.
+
+**map**은 리턴값을 출력할수 있다.
+
+즉 **forEach와 map**의 큰 차이는 바로 리턴값에 있는 것이다.
+
+성능면에 있어서도 **map이 forEach**보다 유리하다. 가능하면 map을 
+사용하는게 좋다. 
+
+그럼 **reduce**에 대해서도 알아보자
+
+reduce의 문법은 
+
+<pre class="brush:js">
+[0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
+  return accumulator + currentValue;
+});
+</pre>
+
+**reduce**의 인자로는 총4개를 받을수가 있는데 이전값,현재값,index,배열을 받을수가 있다.
+
+간단한 코드를 통해 reduce를 알아보자
+
+
