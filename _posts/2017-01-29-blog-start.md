@@ -19,7 +19,7 @@ images:
 2017.1.29일 git 블로그 시작
 
 기존 네이버블로그 주소입니다.<br>
-http://blog.naver.com/radlohead
+<a href="http://blog.naver.com/radlohead">http://blog.naver.com/radlohead</a>
  
 <pre class="brush: js">
 function func()
