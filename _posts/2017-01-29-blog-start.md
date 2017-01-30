@@ -1,6 +1,6 @@
 ---
 layout: post
-title: blog 시작
+title: git blog 시작
 category: front-end
 tags:
   - front-end
