@@ -14,9 +14,7 @@ images:
   title:
 ---
 
-## blog 시작    
-
-2017.1.29일 git 블로그 시작
+## git blog 시작    
 
 <!--more-->
 
