@@ -31,8 +31,7 @@ var a = arr.forEach(function(v){
 console.log(a);  //undefined
 </pre>
 
-이 경우 **undefined**가 출력 된다.
-
+이 경우 **undefined**가 출력 된다.<br>
 하지만 같은 경우라도 map을 이용하면 다르다.
 
 <pre class="brush: js">
@@ -43,17 +42,13 @@ var a = arr.map(function(v){
 console.log(a);  //[2,3,4,5,6]
 </pre>
 
-이 경우는 **[2,3,4,5,6]**이 들어있는 배열이 출력된다.
-
-**map**은 리턴값을 출력할수 있다.
-
-즉 **forEach와 map**의 큰 차이는 바로 리턴값에 있는 것이다.
-
+이 경우는 **[2,3,4,5,6]**이 들어있는 배열이 출력된다.<br>
+**map**은 리턴값을 출력할수 있다.<br>
+즉 **forEach와 map**의 큰 차이는 바로 리턴값에 있는 것이다.<br>
 성능면에 있어서도 **map이 forEach**보다 유리하다. 가능하면 **map**을 
 사용하는게 좋다. 
 
 그럼 **reduce**에 대해서도 알아보자
-
 **reduce**의 문법은 아래와 같다.
 
 <pre class="brush:js">
@@ -64,7 +59,7 @@ console.log(a);  //[2,3,4,5,6]
 
 **reduce**의 인자로는 총4개를 받을수가 있는데 이전값,현재값,index,배열을 받을수가 있다.
 
-간단한 코드를 통해 reduce를 알아보자
+간단한 코드를 통해 **reduce**를 알아보자
 
 <pre class="brush:js">
     var arr = [1,2,3,4,5];
@@ -75,7 +70,6 @@ console.log(a);  //[2,3,4,5,6]
 </pre>
 
 이전에 살펴본 **map**과 달리 **reduce**는 배열이 아닌 하나의 값으로 출력을 하고 있다.
-
 이전값과 현재값을 더하는 방식으로 값을 출력해 내는데
 
 1+2 = 3 <br>
