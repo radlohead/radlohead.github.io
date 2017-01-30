@@ -56,7 +56,7 @@ console.log(a);  //[2,3,4,5,6]
 
 그럼 **reduce**에 대해서도 알아보자
 
-**reduce**의 문법은 
+**reduce**의 문법은 아래와 같다.
 
 <pre class="brush:js">
 [0, 1, 2, 3, 4].reduce(function(accumulator, currentValue, currentIndex, array) {
@@ -77,5 +77,3 @@ console.log(a);  //[2,3,4,5,6]
 </pre>
 
 이전에 살펴본 **map**과 달리 **reduce**는 배열이 아닌 하나의 값으로 출력을 하고 있다.
-
-물론 큰 차이는 아닐지 모르지만 정확히 아는것은 중요하다고 생각한다.
