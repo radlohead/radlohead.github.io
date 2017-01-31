@@ -28,9 +28,6 @@
     <!-- web default -->
     <title>{{ meta_title }}</title>
     <meta name="description" content="{{ meta_description }}">
-    <!-- facebook -->
-    <meta property="fb:app_id" content="{{ site.facebook_app_id }}">
-    <meta property="fb:admins" content="{{ site.facebook_admins_id }}">
 
     <!-- open graph -->
     <meta property="og:site_name" content="{{ meta_title }}" >
@@ -50,8 +47,6 @@
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" >
     <meta property="article:author" content="{{ site.url }}/about/">
     {% endif %}
-    <meta property="article:author" content="https://twitter.com/saltfactory" >
-    <meta property="article:author"  content="https://facebook.com/salthub" >
     <meta property="article:publisher" content="{{ site.url }}/about/" />
 
     {% if page.categories %}
@@ -73,29 +68,14 @@
     <meta itemprop="image" content="{{ meta_image }}">
 
 
-    <!-- twitter cards -->
-    {% if page.images.title %}
-    <meta name="twitter:card" content="summary_large_image">
-    {% else %}
-    <meta name="twitter:card" content="summary">
-    {% endif %}
-    <meta name="twitter:site" content="@{{ site.twitter_username }}">
-    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
-    <meta name="twitter:title" content="{{ meta_title }}">
-    {% if page.url %}
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-    {% endif %}
-    <meta name="twitter:description" content="{{ meta_description }}">
-    <meta name="twitter:image" content="{{ meta_image }}">
-
     <!-- profile -->
     <meta property="profile:first_name" content="SungKwang">
     <meta property="profile:last_name" content="Song">
     <meta property="profile:gender" content="male">
     <meta property="profile:username" content="saltfactory">
 
-    <link rel="alternate" type="application/atom+xml" title="saltfactory's blog" href="http://blog.saltfactory.net/atom/" >
-    <link rel="alternate" type="application/rss+xml" title="saltfactory's blog" href="http://blog.saltfactory.net/rss"/>
+    <link rel="alternate" type="application/atom+xml" title="minho blog" href="https://radlohead.github.io" >
+    <link rel="alternate" type="application/rss+xml" title="minho blog" href="https://radlohead.github.io"/>
     <!-- style -->
     <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400">
