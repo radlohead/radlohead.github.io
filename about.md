@@ -11,7 +11,7 @@ redirect_from : /profile/
 ![]({{site.url}}/assets/images/profile.jpg)
 
 * 그린컴퓨터학원 웹퍼블리싱 과정수료
-* (주오엠넷 웹퍼블리셔 근무
+* 오엠넷 웹퍼블리셔 근무
 * 크리에이티브시소 웹퍼블리셔 근무
 
 ## 연락처
