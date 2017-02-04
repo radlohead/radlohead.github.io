@@ -33,10 +33,10 @@ redirect_from : /profile/
 * **Jquery**
 * **Node.js**
 * **Webpack**
-* **AJAX**
-* **NPM**
-* **SLACK**
-* **MVC**
+* **Ajax**
+* **Npm**
+* **Slack**
+* **Mvc**
 * **Redux**
 * **Bower**
 * **Karma**
