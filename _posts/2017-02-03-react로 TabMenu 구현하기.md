@@ -72,8 +72,8 @@ test.jsp로 생성하고 아래처럼 json 방식으로 코드를 입력하자
 </pre>
 
 여기까지 삽입이 끝났다면 필요한 코드는 모두 입력이 끝났다.
-index.html을 실행해보면 data.study.ajax에 해당하는 json값이 넘어온다.
-그 상태에서 study.ajax에 해당하는 json값을 수정해보자 그러면 새로고침을 하지 않아도
+index.html을 실행하고 버튼을 클릭하면 data.study.ajax에 해당하는 json값이 넘어온다.
+그 상태에서 study.ajax에 해당하는 json값을 수정후에 다시 버튼을 클릭해보면 새로고침을 하지 않아도
 데이터 값이 변경 되는걸 확인할 수 있다.
 
 <!-- <pre class="brush:js"></pre> -->
