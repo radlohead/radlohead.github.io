@@ -40,9 +40,7 @@ images:
     }
     Func.call({c: 1}, 2, 3);  // 첫번째 인자는 this 개체로 사용됩니다. 두번째는 숫자를 받습니다.
 </pre>
-<pre class="brush:js">
 call()과 apply()의 차이점은 두번째 인자를 어떤형태로 받느냐의 차이입니다. 숫자로 받느냐 배열로 받느냐
-</pre>
 <pre class="brush:js">
     (function () {
         console.log(this);  //window
