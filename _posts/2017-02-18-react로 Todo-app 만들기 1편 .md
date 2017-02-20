@@ -112,6 +112,7 @@ webpack.config는 webpack으로 번들파일을 만들기 위한 설정입니다
 }
 </pre>
 여기까지 작성하셨다면 webpack, babel설정은 모두 끝났습니다. 이제 개발파일을 작성하겠습니다.
+
 **index.html**
 <pre class="brush:js">
     <div id="root"></div>
@@ -119,6 +120,7 @@ webpack.config는 webpack으로 번들파일을 만들기 위한 설정입니다
 </pre>
 index.html은 생성해서 div태그 하나와 bundle.js만 불러오면 됩니다. 그외 디자인적인 부분은
 클론한 파일을 참고해 주세요. Main.js부터 기본구문만 작성해보겠습니다.
+
 **Main.js**
 <pre class="brush:js">
 import React from 'react';
