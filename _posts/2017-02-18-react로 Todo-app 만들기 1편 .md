@@ -77,6 +77,7 @@ $ npm i -D classnames
 **webpack.config.js**
 <pre class="brush:js">
 //webpack.config.js
+
 module.export = {
     entry: './src/Main.js',
     output: {
