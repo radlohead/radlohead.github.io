@@ -43,7 +43,7 @@ todo-app만큼 총체적인 기능을 담을만한 앱이 떠오르지가 않아
 - webpack.config.js
 
 전체 파일구조는 이렇게 되는데 [완성파일](https://github.com/radlohead/todo_init.git)
-해당 링크에서 클론해서 Todos.css는 쓰기 바란다. 폴더구조 전체를 가져다가 써도 무방하다.
+해당 링크에서 클론해서 Todos.css는 쓰면 됩니다. 폴더구조 전체를 가져다가 써도 무방합니다.
 package.js부터 수정을 하겠습니다. 설명은 Todos.css만 가져다가 쓰는걸로 생각하고 
 진행을 하도록 하겠습니다.
 <pre class="brush:js">

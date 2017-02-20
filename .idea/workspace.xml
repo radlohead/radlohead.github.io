@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe1ef5bc-94d9-4b6e-904d-015f4c1c3a5b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 3편 .md" afterPath="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 3편 .md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md" afterPath="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md" />
     </list>
     <ignored path="radlohead.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,12 +23,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2017-02-18-react로 Todo-app 만들기 3편 .md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-02-18-react로 Todo-app 만들기 3편 .md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 3편 .md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="290">
+              <first_editor relative-caret-position="245">
                 <caret line="440" column="28" lean-forward="false" selection-start-line="440" selection-start-column="28" selection-end-line="440" selection-end-column="28" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-02-18-react로 Todo-app 만들기 1편 .md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="315">
+                <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -110,9 +123,9 @@
         <option value="$PROJECT_DIR$/_posts/2017-02-14-javascript-콜백함수 이해하기.md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app만들기.md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 2편 .md" />
         <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 3편 .md" />
+        <option value="$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md" />
       </list>
     </option>
   </component>
@@ -600,12 +613,12 @@
       <workItem from="1487454646673" duration="639000" />
       <workItem from="1487466134634" duration="88000" />
       <workItem from="1487470008900" duration="16000" />
-      <workItem from="1487526574694" duration="4846000" />
+      <workItem from="1487526574694" duration="5097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62381000" />
+    <option name="totallyTimeSpent" value="62632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
@@ -1029,16 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="173">
-            <caret line="149" column="19" lean-forward="false" selection-start-line="149" selection-start-column="19" selection-end-line="149" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 2편 .md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1053,8 +1056,19 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 3편 .md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="290">
+          <first_editor relative-caret-position="245">
             <caret line="440" column="28" lean-forward="false" selection-start-line="440" selection-start-column="28" selection-end-line="440" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-02-18-react로 Todo-app 만들기 1편 .md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
             <folding />
           </first_editor>
           <second_editor />
