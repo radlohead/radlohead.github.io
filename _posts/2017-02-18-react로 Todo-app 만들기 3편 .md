@@ -26,6 +26,7 @@ images:
 ## 설명
 
 가장 먼저 추가 기능을 만들어보겠습니다.
+
 **App.js**
 <pre class="brush:js">
 import React, { Component } from 'react';
@@ -55,8 +56,9 @@ handleAddTodo함수를 만들어서 this.state에 값이 추가를 해야하는�
                 &lt;Footer /&gt;
             &lt;/div&gt;
 </pre>
-**Header.js**
 constructor 아래에 해당 코드를 입력해주세요
+
+**Header.js**
 <pre class="brush:js">
     handleKeyDown(e){
         const val = this._input.value;
@@ -82,6 +84,7 @@ input창에 텍스트를 입력하면 조금전에 만든 handleAddTodo함수를
         )
 </pre>
 추가 기능이 완성됐습니다. 이제 추가한 기능을 삭제하는 기능을 만들어 보겠습니다.
+
 **App.js**
 <pre class="brush:js">
 handleDeleteTodo(id){
@@ -143,6 +146,7 @@ render(){
 </pre>
 여기까지 잘 따라오셨다면 삭제기능까지 구현이 완료가 되었습니다.
 이번은 왼쪽에 있는 아이콘을 눌렀을때 선택기능을 구현해보겠습니다.
+
 **App.js**
 <pre class="brush:js">
 import ClassNames from 'classnames';
@@ -212,6 +216,7 @@ render(
 이제 왼쪽아이콘을 눌러서 선택이 되는지 확인해보세요 여기까지 정상적으로 되셨다면 
 수정을 할수 있는 기능을 만들어보겠습니다. 텍스트수정은 한가지 기능만 있지만
 지금까지 기능중에서 가장 고려할게 많은 기능입니다. 코딩완료 후 설명을 이어나가겠습니다.
+
 **App.js**
 <pre class="brush:js">
 handleEditTodo(id){
@@ -270,6 +275,7 @@ render(){
 </pre>
 텍스트를 더블클릭하면 텍스트가 모두 사라지고 커서도 input을 가리키고 있지 않는 걸 볼수 있는데
 정상이다. 더블클릭하면 input에 커서가 이동하고 원래의 텍스트가 있도록 
+
 **Todo.js**
 <pre class="brush:js">
 componnentDidUpdate(){
@@ -290,6 +296,7 @@ componentDidUpdate는 수정될때마다 반영을 합니다. 해당 메소드�
 가리키게끔 되어있습니다. onFocus함수에서는 원래의 텍스트를 가지게끔 되어있다. 
 이제 다 끝났... 아니 한가지가 남았다. 수정후에 엔터를 치면 텍스트가 변경되야 하는데 
 현재는 변경이 되지 않는다.
+
 **App.js**
 <pre class="brush:js">
 handleSaveTodo(id, newText){
@@ -336,6 +343,7 @@ onKeyDown(e){
 </pre>
 여기까지 수정기능은 모두 완성되었습니다. 필터에 관련된것만 남았네요
 남은건 한꺼번에 진행하도록 하겠습니다.
+
 **App.js**
 <pre class="brush:js">
 handleToggleAll(){
