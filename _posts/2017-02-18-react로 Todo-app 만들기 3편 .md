@@ -228,13 +228,217 @@ return(
 </pre>
 **TodoList.js**
 <pre class="brush:js">
-
+render(){
+    const {
+        handleEditTodo
+    } = this.props;
+    
+    return (
+        &lt;Todo 
+            &lt;onEditTodo={()=> handleEditTodo(id)} /&gt;
+        /&gt;
+    );
+}
 </pre>
-<pre class="brush:js"></pre>
-<pre class="brush:js"></pre>
-<pre class="brush:js"></pre>
-<pre class="brush:js"></pre>
-<pre class="brush:js"></pre>
+**Todo.js**
+<pre class="brush:js">
+render(){
+    const {
+        onEditTodo
+    } = this.props;
+    return (
+        &lt;li className={ClassNames("todo-item", {
+            editing: editing,
+            completed: done
+        })}&gt;
+            &lt;div className="todo-item__view"&gt;
+                &lt;div
+                    className="todo-item__view__text"
+                    onDoubleClick={onEditTodo}
+                &gt;
+                    {text}
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;input
+                className="todo-item__edit"
+                type="text"
+                ref={ref=> { this._textInput = ref; }}
+                onBlur={onCancelEditTodo}
+            /&gt;
+        &gt;
+}
+</pre>
+텍스트를 더블클릭하면 텍스트가 모두 사라지고 커서도 input을 가리키고 있지 않는 걸 볼수 있는데
+정상이다. 더블클릭하면 input에 커서가 이동하고 원래의 텍스트가 있도록 
+**Todo.js**
+<pre class="brush:js">
+componnentDidUpdate(){
+    if(this.props.editing) this._textInput.focus();
+}
+onFocus(){
+    this._textInput.value = this.props.text;
+}
+&ltinput
+    className="todo-item__edit"
+    type="text"
+    ref={ref=> { this._textInput = ref; }}
+    onFocus={()=> this.onFocus()}
+    onBlur={onCancelEditTodo}
+/&gt;
+</pre>
+componentDidUpdate는 수정될때마다 반영을 합니다. 해당 메소드에서는 커서가 input을 
+가리키게끔 되어있습니다. onFocus함수에서는 원래의 텍스트를 가지게끔 되어있다. 
+이제 다 끝났... 아니 한가지가 남았다. 수정후에 엔터를 치면 텍스트가 변경되야 하는데 
+현재는 변경이 되지 않는다.
+**App.js**
+<pre class="brush:js">
+handleSaveTodo(id, newText){
+    const newTodos = [...this.state.todos];
+    const editIndex = newTodos.findIndex(v=> v.id === id);
+    newTodos[editIndex].text = newText;
+    this.setState({
+        todos: newTodos,
+        editing: null
+    });
+}
+
+&ltTodoList 
+    handleSaveTodo={(id, newText)=> this.handleSaveTodo(id, newText)}
+/&gt;
+</pre>
+**TodoList.js**
+<pre class="brush:js">
+render(){
+    const {
+        handleSaveTodo
+    } = this.props;
+    return (
+        &lt;Todo
+            onSaveTodo = {text=> handleSaveTodo(id, text)}
+        /&gt;
+}
+</pre>
+**Todo.js**
+<pre class="brush:js">
+onKeyDown(e){
+    const text = this._textInput.value;
+    if(!text || e.keyCode !== 13) return;
+    this.props.onSaveTodo(text);
+}
+&lt;input
+    className="todo-item__edit"
+    type="text"
+    ref={ref=> { this._textInput = ref; }}
+    onFocus={()=> this.onFocus()}
+    onBlur={onCancelEditTodo}
+    onKeyDown={(e)=> this.onKeyDown(e)}
+/&gt;
+</pre>
+여기까지 수정기능은 모두 완성되었습니다. 필터에 관련된것만 남았네요
+남은건 한꺼번에 진행하도록 하겠습니다.
+**App.js**
+<pre class="brush:js">
+handleToggleAll(){
+    const newToggleAll = !this.state.todos.every(v => v.done);
+    const newTodos = this.state.todos.map(v => {
+        v.done = newToggleAll,
+        return v;
+    });
+    this.setState({
+        todos: newTodos
+    });
+}
+handleDeleteCompleted(){
+    const newTodos = this.state.todos.filter(v => !v.done);
+    this.setState({ todos: newTodos });
+}
+render(){
+    const activeLength = todos.filter(v => !v.done).length;
+    const completedLength = todos.length - activeLength;
+    
+    return (
+        &lt;TodoList
+            handleToggleAll={()=> this.handleToggleAll()} 
+        /&gt;
+        &lt;Footer
+            filter={filter}
+            activeLength={activeLength}
+            completedLength={completedLength}
+            handleDeleteCompleted={()=> this.handleDeleteCompleted()}
+        /&gt;
+    )
+}
+</pre>
+**TogoList.js**
+<pre class="brush:js">
+render(){
+    const {
+        handleToggleAll
+    } = this.props;
+}
+return (
+    &lt;div className="todo-app__main"&gt;
+        &lt;div
+            className={ClassNames('toggle-all', {
+                checked: todos.every(v =&gt; v.done)
+            })}
+            onClick={handleToggleAll}
+        /&gt;
+    &lt;/div&gt;
+</pre>
+**Footer.js**
+<pre class="brush:js">
+import { Link } from 'react-router';
+import ClassNames from 'classnames';
+
+render(){
+    const {
+        activeLength,
+        filter,
+        completedLength,
+        handleDeleteCompleted
+    } = this.props;
+    return (
+        &lt;div className="footer"&gt;
+            &lt;span className="todo-count"&gt;
+                &lt;strong&gt;{activeLength}&lt;/strong&gt;{' '}
+                &lt;span&gt;{activeLength &lt; 1 ? 'items' : 'item'}&lt;/span&gt;
+                {' '}left
+            &lt;/span&gt;
+            &lt;ul className="todo-filters"&gt;
+                &lt;li&gt;
+                    &lt;Link
+                        to="/"
+                        className={ClassNames({'selected': !filter})}
+                    &gt;All&lt;/Link&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;Link
+                        to="/active"
+                        className={ClassNames({'selected': filter === 'active'})}
+                    &gt;Active&lt;/Link&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;Link
+                        to="/completed"
+                        className={ClassNames({'selected': filter === 'completed'})}
+                    &gt;Completed&lt;/Link&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;button
+                className={ClassNames('todo-delete-completed', {
+                    hidden: !completedLength
+                })}
+                onClick={handleDeleteCompleted}
+            &gt;
+                Delete Completed
+            &lt;/button&gt;
+        &lt;/div&gt;
+    )
+}
+</pre>
+여기까지 react로 todo-app을 모두 만들었습니다. 터미널에서 npm start를 입력후
+localhost:3000 에서 확인이 가능합니다.
 <pre class="brush:js"></pre>
 
 <!-- <pre class="brush:js"></pre> -->
