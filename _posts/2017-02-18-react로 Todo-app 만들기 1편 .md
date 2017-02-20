@@ -73,6 +73,7 @@ $ npm i -D classnames
 그리고 npm i -D에서 D는 개발자전용으로 설치하는 옵션입니다. i는 install이구요
 
 이제 webpack.config.js를 생성해주세요
+
 **webpack.config.js**
 <pre class="brush:js">
 module.export = {
