@@ -377,7 +377,7 @@ render(){
     )
 }
 </pre>
-**TogoList.js**
+**TodoList.js**
 <pre class="brush:js">
 render(){
     const {
@@ -445,9 +445,42 @@ render(){
     )
 }
 </pre>
+this.state안의 내용들은 링크로도 받아오거나 파일로도 받아올수가 있어야 합니다.
+그래서 axios로 파일로 받아오는걸 해보겠습니다. 
+터미널에서 axios를 개발자전용으로 설치해주세요
+<pre class="brush:js">
+$ npm i -D axios
+</pre>
+**App.js**
+<pre class="brush:js">
+import axios from 'axios';
+
+componentWillMount(){
+    axios.get('./state.json')
+        .then(response => {
+            this.setState({ todos: response.data.todos });
+        });
+}
+//state.todos값을 json으로 받아오니 todos값은 비워주시면 됩니다.
+this.state = {
+    todos:[],
+    editing: null
+}
+</pre>
+output폴더에 **state.json**파일을 만드시고 아래 코드를 넣어주세요
+<pre class="brush:js">
+{
+  "todos": [
+    {"id": 1000, "text": "react로 투두앱 만들기"},
+    {"id": 1001, "text": "react는 라이브러리이다."},
+    {"id": 1002, "text": "react는 view를 담당한다."},
+    {"id": 1003, "text": "todo값은 json으로 불러온다."}
+  ]
+}
+</pre>
 여기까지 react로 todo-app을 모두 만들었습니다. 터미널에서 npm start를 입력후
-localhost:3000 에서 확인이 가능합니다.
-<pre class="brush:js"></pre>
+localhost:3000 에서 확인이 가능합니다. json안의 텍스트가 이상없이 연결이 되면
+화면에서 텍스트가 출력된걸 확인하실 수가 있습니다.
 
 <!-- <pre class="brush:js"></pre> -->
 <!-- ![test이미지]({{site.url}}/images/es6.jpg) -->
