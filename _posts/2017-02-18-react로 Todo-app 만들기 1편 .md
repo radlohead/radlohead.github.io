@@ -76,8 +76,6 @@ $ npm i -D classnames
 
 **webpack.config.js**
 <pre class="brush:js">
-//webpack.config.js
-
 module.export = {
     entry: './src/Main.js',
     output: {
@@ -102,6 +100,7 @@ module.export = {
 };
 </pre>
 webpack.config는 webpack으로 번들파일을 만들기 위한 설정입니다.
+
 **.babelrc**
 <pre class="brush:js">
 {
