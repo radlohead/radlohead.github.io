@@ -481,9 +481,6 @@ output폴더에 **state.json**파일을 만드시고 아래 코드를 넣어주�
 여기까지 react로 todo-app을 모두 만들었습니다. 터미널에서 npm start를 입력후
 localhost:3000 에서 확인이 가능합니다. json안의 텍스트가 이상없이 연결이 되면
 화면에서 텍스트가 출력된걸 확인하실 수가 있습니다.
-[완성파일](https://github.com/radlohead/todo.git)
-해당파일을 클론후 npm i 이후 npm start를 터미널에서 실행하시면 
-localhost:3000에서 결과물을 확인하실 수 있습니다.
 
 <!-- <pre class="brush:js"></pre> -->
 <!-- ![test이미지]({{site.url}}/images/es6.jpg) -->
