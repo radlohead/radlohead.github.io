@@ -27,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-24-handlebars를 이용해서 외부API를 이용한 날씨 출력.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="259">
-                <caret line="425" column="11" lean-forward="true" selection-start-line="425" selection-start-column="11" selection-end-line="425" selection-end-column="11" />
+              <first_editor relative-caret-position="200">
+                <caret line="240" column="17" lean-forward="false" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -597,12 +597,12 @@
       <workItem from="1487526574694" duration="8322000" />
       <workItem from="1487906187214" duration="1369000" />
       <workItem from="1487914599824" duration="214000" />
-      <workItem from="1487914938521" duration="4968000" />
+      <workItem from="1487914938521" duration="5321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72408000" />
+    <option name="totallyTimeSpent" value="72761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
@@ -1048,8 +1048,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-24-handlebars를 이용해서 외부API를 이용한 날씨 출력.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="259">
-            <caret line="425" column="11" lean-forward="true" selection-start-line="425" selection-start-column="11" selection-end-line="425" selection-end-column="11" />
+          <first_editor relative-caret-position="200">
+            <caret line="240" column="17" lean-forward="false" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
             <folding />
           </first_editor>
           <second_editor />
