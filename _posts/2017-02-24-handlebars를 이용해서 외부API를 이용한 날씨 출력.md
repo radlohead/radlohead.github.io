@@ -422,8 +422,8 @@ class ViewComponent {
 export default ViewComponent;
 </pre>
 여기까지 잘 따라오셨다면 모두 끝났습니다. **npm start** 후
-**localhost:7777**에서 확인해보세요 날씨버튼을 클릭하면 날씨가 날짜와 날씨가 잘 
-동작 되는걸 확인할수가 있습니다.
+**localhost:7777**에서 확인해보세요 날씨버튼을 클릭하면 날씨가 날짜와 온도가 표시되는 걸
+확인하실수 있습니다.
 [완성파일](https://github.com/radlohead/handlebar.git)은 이곳에서 확인하실 수
 있습니다.
 
