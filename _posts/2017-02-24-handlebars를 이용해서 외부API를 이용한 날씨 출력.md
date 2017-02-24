@@ -238,9 +238,9 @@ header.hbs부터 index.html에 있는 파일을 옮겨주세요
 **main.hbs**
 <pre class="brush:js">
 &lt;div class="demo-layout-transparent mdl-layout mdl-js-layout"&gt;
-    {{&gt; header} }
-    {{&gt; mdl-layout__drawer} }
-    {{&gt; mdl-layout__content} }
+    { {&gt; header} }
+    { {&gt; mdl-layout__drawer} }
+    { {&gt; mdl-layout__content} }
 &lt;/div&gt;
 </pre>
 **mdl-layout__content.hbs**
