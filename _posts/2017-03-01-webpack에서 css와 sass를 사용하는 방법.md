@@ -49,7 +49,7 @@ require('./style.css');
 <pre class="brush:js">
 $ npm i -D sass-loader
 </pre>
-**sass**로더를 설치하시
+**sass**로더를 설치해 주세요.
 <pre class="brush:js">
 loaders:[{
     test:/\.scss/,
