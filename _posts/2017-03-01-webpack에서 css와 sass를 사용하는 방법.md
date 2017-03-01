@@ -34,7 +34,7 @@ css를 사용하기 위해서 필요한 플러그인을 설치하겠습니다.
 <pre class="brush:js">
 $ npm i -D style-loader css-loader
 </pre>
-**webpack.config.js
+**webpack.config.js**
 <pre class="brush:js">
 loaders:[{
     test:/\.css/,
