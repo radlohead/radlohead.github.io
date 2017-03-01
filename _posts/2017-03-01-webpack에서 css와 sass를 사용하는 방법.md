@@ -62,7 +62,24 @@ loaders:[{
 <pre class="brush:js">
 require('./style.scss');
 </pre>
-파일을 불러오시면 적용이 끝났습니다.
+파일을 불러오시면 적용이 끝났습니다. 로컬서버에서 확인해 보겠습니다.
+![sourceMap-x]({{site.url}}/content/images/2017-03-01-sourceMap-x.png)
+개발자서버에서 확인해 보면 몇번째줄인지 확인이 안되고 있네요
+
+이 부분을 몇번째줄인지 확인할 수 있게 수정해 보도록 하겠습니다.
+
+**webpack.config.js**
+<pre class="brush:js">
+loaders:[{
+    test:/\.scss/,
+    loader: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
+}]
+</pre>
+sourceMap을 삽입해 줍시다. 테스트 해 본 결과 css-loader에만 sourceMap을 삽입해도 적용이 되는 걸 확인했지만
+혹시 모르니 sass에도 넣어줍시다.
+![sourceMap-x]({{site.url}}/content/images/2017-03-01-sourceMap.png)
+이제 몇번째 줄인지 확인이 잘 됩니다.
+
 
 <!-- <pre class="brush:js"></pre> -->
 <!-- ![test이미지]({{site.url}}/images/es6.jpg) -->
