@@ -23,3 +23,6 @@ article .text h2{
 article .text h2{
     font-size: 14px;
 }
+body.user article{
+    margin: 20px 0;
+}
