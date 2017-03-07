@@ -8,3 +8,18 @@ body.user article{
 body.user article .text{
     padding-bottom: 30px;
 }
+body.user article header h1{
+    font-size: 24px;
+}
+article .text{
+    font-size: 14px;
+}
+article>header h1{
+    font-size: 32px;
+}
+article .text h2{
+    font-size: 24px;
+}
+article .text h2{
+    font-size: 14px;
+}
