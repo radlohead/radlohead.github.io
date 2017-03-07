@@ -25,6 +25,7 @@ redirect_from : /profile/
 
 * **JavaScript**  
 * **Es6**
+* **Es7**
 * **Html5**
 * **Sass**
 * **Git**
@@ -41,3 +42,4 @@ redirect_from : /profile/
 * **Bower**
 * **Karma**
 * **Babel**
+* **D3**
