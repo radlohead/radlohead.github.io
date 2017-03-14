@@ -25,21 +25,16 @@ redirect_from : /profile/
 
 * **JavaScript**  
 * **Es6**
-* **Es7**
 * **Html5**
 * **Sass**
 * **Git**
 * **React**
 * **Angular**
 * **Jquery**
-* **Node.js**
+* **Node**
 * **Webpack**
 * **Ajax**
-* **Npm**
-* **Slack**
-* **Mvc**
 * **Redux**
-* **Bower**
-* **Karma**
 * **Babel**
 * **D3**
+* **AWS**
