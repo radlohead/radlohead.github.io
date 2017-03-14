@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe1ef5bc-94d9-4b6e-904d-015f4c1c3a5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/images/2017-3-14-img01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/images/2017-3-14-img02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/images/2017-3-14-img03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/images/2017-3-14-img04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-03-14-aws ftp filezila로 접속하는 방법과 권한설정 하기.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-03-14-aws ftp filezila로 접속하는 방법과 권한설정 하기.md" afterPath="$PROJECT_DIR$/_posts/2017-03-14-aws ftp filezila로 접속하는 방법과 권한설정 하기.md" />
     </list>
     <ignored path="radlohead.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-03-14-aws ftp filezila로 접속하는 방법과 권한설정 하기.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="290">
-                <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <first_editor relative-caret-position="305">
+                <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -622,12 +618,12 @@
       <workItem from="1488806606459" duration="1257000" />
       <workItem from="1488883871411" duration="183000" />
       <workItem from="1488884532440" duration="1180000" />
-      <workItem from="1489431719774" duration="2405000" />
+      <workItem from="1489431719774" duration="2974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90106000" />
+    <option name="totallyTimeSpent" value="90675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
@@ -937,8 +933,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-03-14-aws ftp filezila로 접속하는 방법과 권한설정 하기.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="290">
-            <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <first_editor relative-caret-position="305">
+            <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
