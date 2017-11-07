@@ -2,35 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>소상공인시장진흥공단 상권정보 업종대분류 코드</title>
+    <title>상권분석 대중소분류</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <style>
-        table{
-            border-collapse: collapse;
-            margin-bottom: 50px;
+        #root {
+            display: table;
         }
-        table > * {
-            text-align: center;
+        #root > .bigClass {
+            margin: 20px 5px 10px 30px;
+            padding-bottom: 10px;
+            font-weight: bold;
         }
-        caption{
-            padding-bottom: 20px;
+        #root .middleClass {
+            margin-left: 30px;
+            font-weight: normal;
         }
-        th, td{
-            border: 1px solid #eee;
-        }
-        th {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        td {
-            width: 200px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+        #root .middleClass:first-child {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    <script src="app.js"></script>
+    <script>
+        $.getJSON({
+            type:"GET",
+            url:"busoness-store-categories.json",
+            success:function(json){
+                var bigClass = [];
+                var middleClass = [];
+                var root = document.getElementById('root');
+                json.map(function(v, i){
+                    var createBigClass = document.createElement('div');
+                    createBigClass.classList.add('bigClass');
+                    middleClass[i] = [];
+                    bigClass.push(v.Name);
+                    createBigClass.innerHTML = v.Name;
+                    root.appendChild(createBigClass);
+                    v.ChildCategories.map(function(data){
+                        var createMiddleClass = document.createElement('div');
+                        createMiddleClass.classList.add('middleClass');
+                        middleClass[i].push(data);
+                        createMiddleClass.innerHTML = data.Name;
+                        createBigClass.appendChild(createMiddleClass);
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
