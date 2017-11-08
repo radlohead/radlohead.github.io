@@ -2,35 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>소상공인시장진흥공단 상권정보 업종중분류 코드</title>
+    <title>상권분석 대중소분류</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <style>
-        table{
-            border-collapse: collapse;
-            margin-bottom: 50px;
+        #root {
+            display: table;
+            width: 100%;
         }
-        table > * {
+        #root > .bigClass {
+            margin: 20px 5px 10px 30px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            border: 1px solid #d5d5d5;
+        }
+        #root .bigClass > .title{
+            background: gray;
+            text-align: center;
+            width: 100%;
+        }
+        #root .middleClass {
+            margin: 20px 30px;
+            font-weight: normal;
+            width: 50%;
+        }
+        #root .middleClass:first-child {
+            margin-top: 10px;
+        }
+        #root .middleClass > .title{
+            background: #8BC34A;
             text-align: center;
         }
-        caption{
-            padding-bottom: 20px;
-        }
-        th, td{
-            border: 1px solid #eee;
-        }
-        th {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        td {
-            width: 200px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+        #root .smallClass {
+            margin-top: 10px;
+            margin-left: 50px;
         }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    <script src="app2.js"></script>
+    <script>
+        $.getJSON({
+            type:"GET",
+            url:"busoness-store-categories.json",
+            success:function(json){
+                var bigClass = [];
+                var middleClass = [];
+                var smallClass = [];
+                var root = document.getElementById('root');
+                json.map(function(v, i){
+                    var createBigClass = document.createElement('div');
+                    createBigClass.classList.add('bigClass');
+                    middleClass[i] = [];
+                    bigClass.push(v.Name);
+                    createBigClass.innerHTML = '<div class="title">'+ v.Name +'</div>';
+                    root.appendChild(createBigClass);
+
+                    v.ChildCategories.map(function(data, index){
+                        var createMiddleClass = document.createElement('div');
+                        createMiddleClass.classList.add('middleClass');
+                        middleClass[i].push(data);
+                        createMiddleClass.innerHTML = '<div class="title">'+ data.Name +'</div>';
+                        createBigClass.appendChild(createMiddleClass);
+                        smallClass[index] = [];
+
+                        data.ChildCategories.map(function (s) {
+                            var createSmallClass = document.createElement('div');
+                            createSmallClass.classList.add('smallClass');
+                            smallClass[index].push(s);
+                            createSmallClass.innerHTML = s.Name;
+                            createMiddleClass.appendChild(createSmallClass);
+                        });
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
