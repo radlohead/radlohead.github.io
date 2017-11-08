@@ -14,11 +14,15 @@
             font-weight: bold;
         }
         #root .middleClass {
-            margin-left: 30px;
+            margin: 20px 30px;
             font-weight: normal;
         }
         #root .middleClass:first-child {
             margin-top: 10px;
+        }
+        #root .smallClass {
+            margin-top: 10px;
+            margin-left: 50px;
         }
     </style>
 </head>
@@ -31,6 +35,7 @@
             success:function(json){
                 var bigClass = [];
                 var middleClass = [];
+                var smallClass = [];
                 var root = document.getElementById('root');
                 json.map(function(v, i){
                     var createBigClass = document.createElement('div');
@@ -39,12 +44,21 @@
                     bigClass.push(v.Name);
                     createBigClass.innerHTML = v.Name;
                     root.appendChild(createBigClass);
-                    v.ChildCategories.map(function(data){
+                    v.ChildCategories.map(function(data, index){
                         var createMiddleClass = document.createElement('div');
                         createMiddleClass.classList.add('middleClass');
                         middleClass[i].push(data);
                         createMiddleClass.innerHTML = data.Name;
                         createBigClass.appendChild(createMiddleClass);
+                        smallClass[index] = [];
+
+                        data.ChildCategories.map(function (s) {
+                            var createSmallClass = document.createElement('div');
+                            createSmallClass.classList.add('smallClass');
+                            smallClass[index].push(s);
+                            createSmallClass.innerHTML = s.Name;
+                            createMiddleClass.appendChild(createSmallClass);
+                        });
                     });
                 });
             }
